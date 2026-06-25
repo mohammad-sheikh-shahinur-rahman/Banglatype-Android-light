@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background type preferences -->
+    <string-array name="bg_type_entries">
+        <item>Color Background</item>
+        <item>Image Background</item>
+    </string-array>
+    <string-array name="bg_type_values">
+        <item>color</item>
+        <item>image</item>
+    </string-array>
+
+    <!-- Sound profile preferences -->
+    <string-array name="sound_profile_entries">
+        <item>System Default</item>
+        <item>Mechanical Keyboard Click</item>
+        <item>iPhone Click</item>
+    </string-array>
+    <string-array name="sound_profile_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Haptic profile preferences -->
+    <string-array name="haptic_profile_entries">
+        <item>System Default / Custom Duration</item>
+        <item>Light / iPhone Tick</item>
+        <item>Medium / Android Tap</item>
+        <item>Strong / Crisp Click</item>
+        <item>Mechanical Double-Tap</item>
+    </string-array>
+    <string-array name="haptic_profile_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>

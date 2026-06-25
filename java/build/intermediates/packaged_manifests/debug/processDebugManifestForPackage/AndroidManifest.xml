@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    coreApp="true"
+    package="com.itamadersomajinc.banglatype"
+    android:versionCode="1000000000"
+    android:versionName="1.0.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="36" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <permission
+        android:name="com.itamadersomajinc.banglatype.HIDE_SOFT_INPUT"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="com.itamadersomajinc.banglatype.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.itamadersomajinc.banglatype.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:defaultToDeviceProtectedStorage="true"
+        android:directBootAware="true"
+        android:extractNativeLibs="true"
+        android:icon="@drawable/logo_banglatype"
+        android:label="@string/english_ime_name"
+        android:roundIcon="@drawable/logo_banglatype"
+        android:supportsRtl="true"
+        android:testOnly="true" >
+        <service
+            android:name="com.itamadersomajinc.banglatype.keyboard.LatinIME"
+            android:exported="true"
+            android:label="@string/english_ime_name"
+            android:permission="android.permission.BIND_INPUT_METHOD" >
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method" />
+        </service>
+        <service
+            android:name="com.itamadersomajinc.banglatype.keyboard.spellcheck.AndroidSpellCheckerService"
+            android:exported="true"
+            android:label="@string/spell_checker_service_name"
+            android:permission="android.permission.BIND_TEXT_SERVICE" >
+            <intent-filter>
+                <action android:name="android.service.textservice.SpellCheckerService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.textservice.scs"
+                android:resource="@xml/spellchecker" />
+        </service>
+        <service
+            android:name="com.itamadersomajinc.banglatype.dictionarypack.DictionaryService"
+            android:label="@string/dictionary_service_name" >
+        </service>
+
+        <activity
+            android:name="com.itamadersomajinc.banglatype.keyboard.setup.SetupActivity"
+            android:exported="true"
+            android:icon="@drawable/logo_banglatype"
+            android:label="@string/english_ime_name"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:roundIcon="@drawable/logo_banglatype"
+            android:theme="@style/platformActivityTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.itamadersomajinc.banglatype.keyboard.permissions.PermissionsActivity"
+            android:exported="false"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.itamadersomajinc.banglatype.keyboard.setup.SetupWizardActivity"
+            android:clearTaskOnLaunch="true"
+            android:exported="true"
+            android:label="@string/english_ime_name"
+            android:theme="@style/platformActivityTheme" >
+        </activity>
+        <activity
+            android:name="com.itamadersomajinc.banglatype.keyboard.settings.SettingsActivity"
+            android:exported="true"
+            android:label="@string/english_ime_settings"
+            android:theme="@style/platformSettingsTheme" >
+        </activity>
+        <activity
+            android:name="com.itamadersomajinc.banglatype.keyboard.spellcheck.SpellCheckerSettingsActivity"
+            android:exported="true"
+            android:label="@string/android_spell_checker_settings"
+            android:theme="@style/platformSettingsTheme" >
+        </activity>
+        <activity
+            android:name="com.itamadersomajinc.banglatype.dictionarypack.DictionarySettingsActivity"
+            android:exported="true"
+            android:label="@string/dictionary_settings_title"
+            android:theme="@style/platformSettingsTheme"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name="com.itamadersomajinc.banglatype.dictionarypack.DownloadOverMeteredDialog"
+            android:exported="true"
+            android:label="@string/dictionary_install_over_metered_network_prompt"
+            android:theme="@style/platformActivityTheme" >
+        </activity>
+        <activity
+            android:name="com.itamadersomajinc.banglatype.keyboard.settings.TestFragmentActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.itamadersomajinc.banglatype.keyboard.SystemBroadcastReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_INITIALIZE" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.inputmethod.latin.DictionaryPackInstallBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.android.inputmethod.dictionarypack.aosp.UNKNOWN_CLIENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.itamadersomajinc.banglatype.dictionarypack.EventHandler"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="com.android.inputmethod.dictionarypack.aosp.UPDATE_NOW" />
+                <action android:name="com.android.inputmethod.dictionarypack.aosp.INIT_AND_UPDATE_NOW" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.itamadersomajinc.banglatype.keyboard.accounts.AccountsChangedReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.accounts.LOGIN_ACCOUNTS_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.itamadersomajinc.banglatype.dictionarypack.DictionaryProvider"
+            android:authorities="@string/authority"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:label="@string/dictionary_provider_name"
+            android:multiprocess="false" >
+        </provider>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.itamadersomajinc.banglatype.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2024, BanglaType
+** Licensed under the Apache License, Version 2.0 (the "License").
+*/
+-->
+<!-- Probhat (প্রভাত) keyboard - bottom row (z..m). -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- z: য় / য -->
+    <Key
+        latin:keySpec="&#x09DF;"
+        latin:moreKeys="&#x09AF;" />
+    <!-- x: শ / ঢ় -->
+    <Key
+        latin:keySpec="&#x09B6;"
+        latin:moreKeys="&#x09DD;" />
+    <!-- c: চ / ছ -->
+    <Key
+        latin:keySpec="&#x099A;"
+        latin:moreKeys="&#x099B;" />
+    <!-- v: আ / ঋ -->
+    <Key
+        latin:keySpec="&#x0986;"
+        latin:moreKeys="&#x098B;,&#x09C3;" />
+    <!-- b: ব / ভ -->
+    <Key
+        latin:keySpec="&#x09AC;"
+        latin:moreKeys="&#x09AD;" />
+    <!-- n: ন / ণ / ঁ (chandrabindu) -->
+    <Key
+        latin:keySpec="&#x09A8;"
+        latin:moreKeys="&#x09A3;,&#x0981;" />
+    <!-- m: ম / ঙ / ঞ -->
+    <Key
+        latin:keySpec="&#x09AE;"
+        latin:moreKeys="&#x0999;,&#x099E;" />
+</merge>

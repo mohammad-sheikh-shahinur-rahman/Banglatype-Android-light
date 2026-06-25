@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2024, BanglaType
+** Licensed under the Apache License, Version 2.0 (the "License").
+*/
+-->
+<Keyboard
+    xmlns:latin="http://schemas.android.com/apk/res-auto"
+>
+    <include
+        latin:keyboardLayout="@xml/rows_probhat" />
+</Keyboard>

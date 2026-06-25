@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="setup_welcome_logo_size">180dp</dimen>
+    <dimen name="setup_welcome_logo_top_margin">80dp</dimen>
+    <dimen name="setup_welcome_logo_bottom_margin">48dp</dimen>
+    <dimen name="setup_title_text_size">40sp</dimen>
+    <dimen name="setup_welcome_description_text_size">20sp</dimen>
+    <dimen name="setup_max_width">720dp</dimen>
+</resources>

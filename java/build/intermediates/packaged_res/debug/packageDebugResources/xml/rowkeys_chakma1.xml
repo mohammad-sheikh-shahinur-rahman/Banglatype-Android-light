@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2026, BanglaType
+** Licensed under the Apache License, Version 2.0 (the "License").
+*/
+-->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked|alphabetShiftLockShifted">
+            <!-- Q: 𑄋 CHAKMA LETTER NGAA -->
+            <Key latin:keySpec="&#x1110B;" />
+            <!-- W: 𑄡 CHAKMA LETTER YAA -->
+            <Key latin:keySpec="&#x11121;" />
+            <!-- E: 𑄓 CHAKMA LETTER DDAA -->
+            <Key latin:keySpec="&#x11113;" />
+            <!-- R: 𑄛 CHAKMA LETTER PAA -->
+            <Key latin:keySpec="&#x1111B;" />
+            <!-- T: 𑄑 CHAKMA LETTER TTAA -->
+            <Key latin:keySpec="&#x11111;" />
+            <!-- Y: 𑄌 CHAKMA LETTER CAA -->
+            <Key latin:keySpec="&#x1110C;" />
+            <!-- U: 𑄏 CHAKMA LETTER JHAA -->
+            <Key latin:keySpec="&#x1110F;" />
+            <!-- I: 𑄐 CHAKMA LETTER NYAA -->
+            <Key latin:keySpec="&#x11110;" />
+            <!-- O: 𑄊 CHAKMA LETTER GHAA -->
+            <Key latin:keySpec="&#x1110A;" />
+            <!-- P: 𑄅 CHAKMA LETTER U -->
+            <Key latin:keySpec="&#x11105;" />
+        </case>
+        <default>
+            <!-- q: 𑄁 CHAKMA SIGN ANUSVARA -->
+            <Key latin:keySpec="&#x11101;" />
+            <!-- w: 𑄠 CHAKMA LETTER YYAA -->
+            <Key latin:keySpec="&#x11120;" />
+            <!-- e: 𑄔 CHAKMA LETTER DDHAA -->
+            <Key latin:keySpec="&#x11114;" />
+            <!-- r: 𑄜 CHAKMA LETTER PHAA -->
+            <Key latin:keySpec="&#x1111C;" />
+            <!-- t: 𑄒 CHAKMA LETTER TTHAA -->
+            <Key latin:keySpec="&#x11112;" />
+            <!-- y: 𑄍 CHAKMA LETTER CHAA -->
+            <Key latin:keySpec="&#x1110D;" />
+            <!-- u: 𑄎 CHAKMA LETTER JAA -->
+            <Key latin:keySpec="&#x1110E;" />
+            <!-- i: 𑄦 CHAKMA LETTER HAA -->
+            <Key latin:keySpec="&#x11126;" />
+            <!-- o: 𑄉 CHAKMA LETTER GAA -->
+            <Key latin:keySpec="&#x11109;" />
+            <!-- p: 𑄤 CHAKMA LETTER WAA -->
+            <Key latin:keySpec="&#x11124;" />
+        </default>
+    </switch>
+</merge>

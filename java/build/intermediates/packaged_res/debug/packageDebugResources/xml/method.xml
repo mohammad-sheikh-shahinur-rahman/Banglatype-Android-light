@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<input-method xmlns:android="http://schemas.android.com/apk/res/android"
+        android:settingsActivity="com.itamadersomajinc.banglatype.keyboard.settings.SettingsActivity"
+        android:isDefault="@bool/im_is_default"
+        android:supportsSwitchingToNextInputMethod="true">
+    <!-- Bangla (Avro) - Default -->
+    <subtype android:icon="@drawable/ic_ime_switcher_dark"
+            android:label="@string/subtype_avro"
+            android:subtypeId="0x0a110001"
+            android:imeSubtypeLocale="bn"
+            android:imeSubtypeMode="keyboard"
+            android:imeSubtypeExtraValue="KeyboardLayoutSet=avro_phonetic,AsciiCapable,CombiningRules=avro,EmojiCapable"
+            android:isAsciiCapable="true"
+    />
+
+    <!-- English (US) -->
+    <subtype android:icon="@drawable/ic_ime_switcher_dark"
+            android:label="@string/subtype_en_US"
+            android:subtypeId="0xc9194f98"
+            android:imeSubtypeLocale="en_US"
+            android:languageTag="en-US"
+            android:imeSubtypeMode="keyboard"
+            android:imeSubtypeExtraValue="TrySuppressingImeSwitcher,AsciiCapable,SupportTouchPositionCorrection,EmojiCapable"
+            android:isAsciiCapable="true"
+    />
+
+    <!-- Bangla (Jatiyo) -->
+    <subtype android:icon="@drawable/ic_ime_switcher_dark"
+            android:label="@string/subtype_jatiyo"
+            android:subtypeId="0x0a110002"
+            android:imeSubtypeLocale="bn"
+            android:imeSubtypeMode="keyboard"
+            android:imeSubtypeExtraValue="KeyboardLayoutSet=jatiyo,EmojiCapable"
+            android:isAsciiCapable="false"
+    />
+
+    <!-- Bangla (Probhat) -->
+    <subtype android:icon="@drawable/ic_ime_switcher_dark"
+            android:label="@string/subtype_probhat"
+            android:subtypeId="0x0a110003"
+            android:imeSubtypeLocale="bn"
+            android:imeSubtypeMode="keyboard"
+            android:imeSubtypeExtraValue="KeyboardLayoutSet=probhat,EmojiCapable"
+            android:isAsciiCapable="false"
+    />
+
+    <!-- Bangla (Unijoy) -->
+    <subtype android:icon="@drawable/ic_ime_switcher_dark"
+            android:label="@string/subtype_unijoy"
+            android:subtypeId="0x0a110004"
+            android:imeSubtypeLocale="bn"
+            android:imeSubtypeMode="keyboard"
+            android:imeSubtypeExtraValue="KeyboardLayoutSet=unijoy,EmojiCapable"
+            android:isAsciiCapable="false"
+    />
+
+    <!-- Arabic -->
+    <subtype android:icon="@drawable/ic_ime_switcher_dark"
+            android:label="@string/subtype_arabic"
+            android:subtypeId="0x0a110005"
+            android:imeSubtypeLocale="ar"
+            android:imeSubtypeMode="keyboard"
+            android:imeSubtypeExtraValue="KeyboardLayoutSet=arabic,EmojiCapable"
+            android:isAsciiCapable="false"
+    />
+
+    <!-- Chakma -->
+    <subtype android:icon="@drawable/ic_ime_switcher_dark"
+            android:label="@string/subtype_chakma"
+            android:subtypeId="0x0a110006"
+            android:imeSubtypeLocale="ccp"
+            android:imeSubtypeMode="keyboard"
+            android:imeSubtypeExtraValue="KeyboardLayoutSet=chakma,EmojiCapable"
+            android:isAsciiCapable="false"
+    />
+
+    <!-- Alphabet (QWERTY) - Generic -->
+    <subtype android:icon="@drawable/ic_ime_switcher_dark"
+            android:label="@string/subtype_no_language_qwerty"
+            android:subtypeId="0xa239ebad"
+            android:imeSubtypeLocale="zz"
+            android:imeSubtypeMode="keyboard"
+            android:imeSubtypeExtraValue="KeyboardLayoutSet=qwerty,AsciiCapable,EnabledWhenDefaultIsNotAsciiCapable,EmojiCapable"
+            android:isAsciiCapable="true"
+    />
+</input-method>

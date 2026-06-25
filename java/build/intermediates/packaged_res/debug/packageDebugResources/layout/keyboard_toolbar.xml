@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Swipeable toolbar with Gboard-like features -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <HorizontalScrollView
+        android:id="@+id/toolbar_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/toolbar_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Page 1: Main actions -->
+            <LinearLayout
+                android:id="@+id/toolbar_page1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/button_clipboard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="44dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/sym_keyboard_clipboard"
+                    android:contentDescription="@string/bt_clipboard"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/button_emoji"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="44dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/sym_keyboard_smiley_lxx_light"
+                    android:contentDescription="@string/bt_emoji"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/button_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="44dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/sym_keyboard_number"
+                    android:contentDescription="@string/bt_numbers"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/button_translate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="44dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/sym_keyboard_translate"
+                    android:contentDescription="@string/bt_translate"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/button_theme"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="44dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/sym_keyboard_theme"
+                    android:contentDescription="@string/bt_theme"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <!-- Page 2: Text editing -->
+            <LinearLayout
+                android:id="@+id/toolbar_page2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/button_undo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="44dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/sym_keyboard_undo"
+                    android:contentDescription="@string/bt_undo"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/button_redo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="44dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/sym_keyboard_redo"
+                    android:contentDescription="@string/bt_redo"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/button_select_all"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="44dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/sym_keyboard_select_all"
+                    android:contentDescription="@string/bt_select_all"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/button_cut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="44dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/sym_keyboard_cut"
+                    android:contentDescription="@string/bt_cut"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/button_copy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="44dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/sym_keyboard_copy"
+                    android:contentDescription="@string/bt_copy"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/button_paste"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="44dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/sym_keyboard_paste"
+                    android:contentDescription="@string/bt_paste"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <!-- Page 3: Layout modes -->
+            <LinearLayout
+                android:id="@+id/toolbar_page3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/button_floating"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="44dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/sym_keyboard_floating"
+                    android:contentDescription="@string/bt_floating"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/button_one_handed_left"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="44dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/sym_keyboard_onehand_left"
+                    android:contentDescription="@string/bt_one_handed_left"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/button_one_handed_right"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="44dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/sym_keyboard_onehand_right"
+                    android:contentDescription="@string/bt_one_handed_right"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/button_full"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="44dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/sym_keyboard_full"
+                    android:contentDescription="@string/bt_full_mode"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/button_layout_picker"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="44dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/sym_keyboard_layout"
+                    android:contentDescription="@string/bt_layout_picker"
+                    android:padding="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Page indicator dots -->
+    <LinearLayout
+        android:id="@+id/toolbar_page_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp">
+
+        <View
+            android:id="@+id/dot_page1"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/toolbar_dot_active" />
+
+        <View
+            android:id="@+id/dot_page2"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/toolbar_dot_inactive" />
+
+        <View
+            android:id="@+id/dot_page3"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:background="@drawable/toolbar_dot_inactive" />
+    </LinearLayout>
+
+</FrameLayout>

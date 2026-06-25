@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:latin="http://schemas.android.com/apk/res-auto"
+    android:key="screen_appearance"
+    android:title="@string/settings_screen_appearance">
+    <PreferenceScreen
+        android:fragment="com.itamadersomajinc.banglatype.keyboard.settings.ThemeSettingsFragment"
+        android:key="screen_theme"
+        android:title="@string/settings_screen_theme" />
+    <PreferenceScreen
+        android:fragment="com.itamadersomajinc.banglatype.keyboard.settings.CustomInputStyleSettingsFragment"
+        android:key="custom_input_styles"
+        android:title="@string/custom_input_styles_title" />
+    <CheckBoxPreference
+        android:key="pref_split_keyboard"
+        android:title="@string/enable_split_keyboard"
+        android:persistent="true"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="pref_show_number_row"
+        android:title="Show number row"
+        android:persistent="true"
+        android:defaultValue="false" />
+    <com.itamadersomajinc.banglatype.keyboard.settings.SeekBarDialogPreference
+        android:key="pref_keyboard_height"
+        android:title="Keyboard height"
+        latin:maxValue="120"
+        latin:minValue="50"
+        latin:stepValue="5" />
+
+    <PreferenceCategory android:title="RGB Outline Theme">
+        <CheckBoxPreference
+            android:key="pref_rgb_theme_enabled"
+            android:title="RGB Rainbow Outline Animation"
+            android:summary="Show dynamic running gaming lights on key borders"
+            android:defaultValue="false"
+            android:persistent="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Custom Theme Maker">
+        <CheckBoxPreference
+            android:key="pref_custom_theme_enabled"
+            android:title="Enable Custom Theme"
+            android:summary="Apply custom background, key, and text colors"
+            android:defaultValue="false"
+            android:persistent="true" />
+        <ListPreference
+            android:key="pref_custom_bg_type"
+            android:title="Background Type"
+            android:entries="@array/bg_type_entries"
+            android:entryValues="@array/bg_type_values"
+            android:defaultValue="color"
+            android:dependency="pref_custom_theme_enabled"
+            android:persistent="true" />
+        <Preference
+            android:key="pref_custom_background_color_picker"
+            android:title="Keyboard Background Color"
+            android:summary="Choose background color"
+            android:dependency="pref_custom_theme_enabled" />
+        <Preference
+            android:key="pref_custom_bg_image_picker"
+            android:title="Keyboard Background Image"
+            android:summary="Choose and crop image from gallery"
+            android:dependency="pref_custom_theme_enabled" />
+        <Preference
+            android:key="pref_custom_key_color_picker"
+            android:title="Key Color"
+            android:summary="Choose color of individual keys"
+            android:dependency="pref_custom_theme_enabled" />
+        <Preference
+            android:key="pref_custom_key_text_color_picker"
+            android:title="Text &amp; Icon Color"
+            android:summary="Choose color of key letters and icons"
+            android:dependency="pref_custom_theme_enabled" />
+    </PreferenceCategory>
+</PreferenceScreen>
+

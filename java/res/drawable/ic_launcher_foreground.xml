@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  BanglaType adaptive icon foreground (108x108dp, safe zone ~ center 66dp).
+  A white keyboard tablet outline with a stylized Bangla glyph and a row of keys,
+  matching the BanglaType brand logo. Drawn in white to sit on the blue background.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Keyboard tablet outline (rounded rect, stroked) -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="4.2"
+        android:fillColor="#00000000"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"
+        android:pathData="M37,28 h34 a9,9 0 0 1 9,9 v34 a9,9 0 0 1 -9,9 h-34 a9,9 0 0 1 -9,-9 v-34 a9,9 0 0 1 9,-9 z" />
+
+    <!-- Stylized Bangla glyph: top matra bar + descending hook (evokes ট/আ). -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M40,37 h28 v4.6 h-11.2 v18 q0,7 -6,7 q-5.4,0 -6.4,-5 l4.6,-1.1 q0.4,1.7 1.8,1.7 q1.4,0 1.4,-2.4 v-18 h-6.2 q0,4.6 -2.4,7.4 l-3.4,-3 q1.8,-2.2 1.8,-6 v-2.9 z" />
+
+    <!-- Keyboard keys: two short rows of rounded dashes near the bottom. -->
+    <group>
+        <path android:fillColor="#FFFFFFFF" android:pathData="M37,64 m0,0 a2,2 0 0 1 2,-2 h4 a2,2 0 0 1 2,2 v2 a2,2 0 0 1 -2,2 h-4 a2,2 0 0 1 -2,-2 z" />
+        <path android:fillColor="#FFFFFFFF" android:pathData="M48,64 m0,0 a2,2 0 0 1 2,-2 h4 a2,2 0 0 1 2,2 v2 a2,2 0 0 1 -2,2 h-4 a2,2 0 0 1 -2,-2 z" />
+        <path android:fillColor="#FFFFFFFF" android:pathData="M59,64 m0,0 a2,2 0 0 1 2,-2 h4 a2,2 0 0 1 2,2 v2 a2,2 0 0 1 -2,2 h-4 a2,2 0 0 1 -2,-2 z" />
+        <path android:fillColor="#FFFFFFFF" android:pathData="M48,71 m0,0 a2,2 0 0 1 2,-2 h10 a2,2 0 0 1 2,2 v2 a2,2 0 0 1 -2,2 h-10 a2,2 0 0 1 -2,-2 z" />
+    </group>
+</vector>

@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.itamadersomajinc.banglatype.keyboard.java-mergeDebugResources-29:/values-nl-rBE/values-nl-rBE.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\shahi\\Downloads\\bnaglatype\\java\\res\\values-nl-rBE\\bools.xml",
+                    "from": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "682",
+                        "endColumns": "42",
+                        "endOffsets": "720"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "42",
+                        "endOffsets": "93"
+                    }
+                }
+            ]
+        }
+    ]
+}

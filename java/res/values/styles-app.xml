@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BanglaType brand styles: Material teal theme + onboarding card styles -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Teal-accented Material theme used by the launcher/setup and Settings.
+         The *.Bridge parent extends the framework Theme.Material, so it applies
+         cleanly to plain framework activities (PreferenceActivity, the setup
+         wizard) while still satisfying MaterialCardView's theme requirement. -->
+    <style name="Theme.BanglaType" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
+        <item name="colorPrimary">@color/bt_teal</item>
+        <item name="colorPrimaryDark">@color/bt_teal_dark</item>
+        <item name="colorAccent">@color/bt_teal</item>
+        <item name="android:colorPrimary">@color/bt_teal</item>
+        <item name="android:colorPrimaryDark">@color/bt_teal_dark</item>
+        <item name="android:colorAccent">@color/bt_teal</item>
+        <item name="android:colorBackground">@color/bt_bg</item>
+        <item name="android:textColorPrimary">@color/bt_text</item>
+        <item name="android:windowBackground">@color/bt_bg</item>
+    </style>
+
+    <!-- Teal-accented dialog theme (used for seek-bar / preference dialogs). -->
+    <style name="Theme.BanglaType.Dialog" parent="Theme.MaterialComponents.Light.Dialog.Bridge">
+        <item name="colorPrimary">@color/bt_teal</item>
+        <item name="colorAccent">@color/bt_teal</item>
+        <item name="android:colorPrimary">@color/bt_teal</item>
+        <item name="android:colorAccent">@color/bt_teal</item>
+    </style>
+
+    <!-- Feature/layout card. -->
+    <style name="BtCard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardBackgroundColor">@color/bt_surface</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
+    <style name="BtCardTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/bt_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BtCardDesc">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/bt_text_muted</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="BtSectionTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/bt_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+</resources>

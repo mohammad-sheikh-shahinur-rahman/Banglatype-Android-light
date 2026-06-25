@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BanglaType brand UI strings -->
+<resources>
+    <!-- Welcome screen feature cards -->
+    <string name="bt_feature_layout_title">Switch layout fast</string>
+    <string name="bt_feature_layout_desc">Swipe the spacebar to switch between Avro, Probhat &amp; Jatiyo — instantly.</string>
+    <string name="bt_feature_speed_title">Write faster</string>
+    <string name="bt_feature_speed_desc">Predictive suggestions and continuous voice typing.</string>
+    <string name="bt_feature_theme_title">100+ themes</string>
+    <string name="bt_feature_theme_desc">Beautiful built-in themes and a powerful theme maker.</string>
+    <string name="bt_feature_sticker_title">Stickers &amp; Emoji</string>
+    <string name="bt_feature_sticker_desc">A full set of stickers and emoji built right in.</string>
+    <string name="bt_feature_secure_title">100% safe &amp; secure</string>
+    <string name="bt_feature_secure_desc">Whatever you type never leaves your phone. Guaranteed.</string>
+    <string name="bt_feature_rich_title">Feature rich</string>
+    <string name="bt_feature_rich_desc">Optional number row, height adjustment and much more.</string>
+
+    <!-- Layout picker -->
+    <string name="bt_layout_picker_title">Choose your writing method</string>
+    <string name="bt_layout_avro_title">Avro (Phonetic)</string>
+    <string name="bt_layout_avro_desc">Type Bangla using English letters — the most popular method.</string>
+    <string name="bt_layout_probhat_title">Probhat</string>
+    <string name="bt_layout_probhat_desc">A popular fixed Bangla layout.</string>
+    <string name="bt_layout_jatiyo_title">Jatiyo (National)</string>
+    <string name="bt_layout_jatiyo_desc">The traditional national Bangla layout.</string>
+    <string name="bt_layout_open_settings">Open layout settings</string>
+    <string name="bt_settings_layouts">Writing methods &amp; layouts</string>
+    <!-- Toolbar buttons -->
+    <string name="bt_clipboard">Clipboard</string>
+    <string name="bt_emoji">Emoji</string>
+    <string name="bt_numbers">Numbers</string>
+    <string name="bt_translate">Translate</string>
+    <string name="bt_theme">Theme</string>
+    <string name="bt_undo">Undo</string>
+    <string name="bt_redo">Redo</string>
+    <string name="bt_select_all">Select All</string>
+    <string name="bt_cut">Cut</string>
+    <string name="bt_copy">Copy</string>
+    <string name="bt_paste">Paste</string>
+    <string name="bt_floating">Floating</string>
+    <string name="bt_one_handed_left">One-handed Left</string>
+    <string name="bt_one_handed_right">One-handed Right</string>
+    <string name="bt_full_mode">Full Mode</string>
+    <string name="bt_layout_picker">Layout</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="InputView.LXX" parent="InputView">
+        <item name="android:elevation">8dp</item>
+    </style>
+    <style name="platformActivityTheme" parent="Theme.BanglaType"/>
+    <style name="platformDialogTheme" parent="Theme.BanglaType.Dialog"/>
+    <style name="platformSettingsTheme" parent="Theme.BanglaType"/>
+</resources>

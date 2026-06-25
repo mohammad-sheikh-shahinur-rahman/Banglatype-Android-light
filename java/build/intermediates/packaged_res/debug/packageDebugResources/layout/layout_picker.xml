@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Custom Writing methods & layouts picker screen with local switch preferences -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/bt_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/BtSectionTitle"
+            android:text="Writing Methods &amp; Layouts / লেখার নিয়ম ও লেআউট" />
+
+        <!-- Phonetic (Avro) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_avro"
+            style="@style/BtCard"
+            android:clickable="true"
+            android:focusable="true"
+            app:rippleColor="@color/bt_teal_light">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp">
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bt_feature_icon_bg"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_bt_layout" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginLeft="14dp">
+                    <TextView style="@style/BtCardTitle"
+                        android:text="Phonetic (Avro-style) / অভ্র ফোনেটিক" />
+                    <TextView style="@style/BtCardDesc"
+                        android:text="Type English letters to write in Bangla (e.g. ami -> আমি)" />
+                </LinearLayout>
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switch_avro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- National (Jatiyo) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_jatiyo"
+            style="@style/BtCard"
+            android:clickable="true"
+            android:focusable="true"
+            app:rippleColor="@color/bt_teal_light">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp">
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bt_feature_icon_bg"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_bt_layout" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginLeft="14dp">
+                    <TextView style="@style/BtCardTitle"
+                        android:text="National (Jatiyo) / জাতীয়" />
+                    <TextView style="@style/BtCardDesc"
+                        android:text="Standard Bangladesh Computer Council layout" />
+                </LinearLayout>
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switch_jatiyo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Probhat -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_probhat"
+            style="@style/BtCard"
+            android:clickable="true"
+            android:focusable="true"
+            app:rippleColor="@color/bt_teal_light">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp">
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bt_feature_icon_bg"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_bt_layout" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginLeft="14dp">
+                    <TextView style="@style/BtCardTitle"
+                        android:text="Probhat / প্রভাত" />
+                    <TextView style="@style/BtCardDesc"
+                        android:text="A popular alternative Bengali layout" />
+                </LinearLayout>
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switch_probhat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Chakma -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_chakma"
+            style="@style/BtCard"
+            android:clickable="true"
+            android:focusable="true"
+            app:rippleColor="@color/bt_teal_light">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp">
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bt_feature_icon_bg"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_bt_layout" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginLeft="14dp">
+                    <TextView style="@style/BtCardTitle"
+                        android:text="Chakma / চাকমা" />
+                    <TextView style="@style/BtCardDesc"
+                        android:text="Specialized character layout for regional Chakma script" />
+                </LinearLayout>
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switch_chakma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Arabic -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_arabic"
+            style="@style/BtCard"
+            android:clickable="true"
+            android:focusable="true"
+            app:rippleColor="@color/bt_teal_light">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp">
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bt_feature_icon_bg"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_bt_layout" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginLeft="14dp">
+                    <TextView style="@style/BtCardTitle"
+                        android:text="Arabic / আরবি" />
+                    <TextView style="@style/BtCardDesc"
+                        android:text="Specialized layout for Arabic typing" />
+                </LinearLayout>
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switch_arabic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- English -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_qwerty"
+            style="@style/BtCard"
+            android:clickable="true"
+            android:focusable="true"
+            app:rippleColor="@color/bt_teal_light">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp">
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bt_feature_icon_bg"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_bt_layout" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginLeft="14dp">
+                    <TextView style="@style/BtCardTitle"
+                        android:text="English / ইংরেজি" />
+                    <TextView style="@style/BtCardDesc"
+                        android:text="Standard QWERTY layout for regular English typing" />
+                </LinearLayout>
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switch_qwerty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

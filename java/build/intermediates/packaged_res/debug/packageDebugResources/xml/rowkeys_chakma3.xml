@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2026, BanglaType
+** Licensed under the Apache License, Version 2.0 (the "License").
+*/
+-->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked|alphabetShiftLockShifted">
+            <!-- Z: 𑄐 CHAKMA LETTER NYAA -->
+            <Key latin:keySpec="&#x11110;" />
+            <!-- X: 𑄯 CHAKMA VOWEL SIGN AU -->
+            <Key latin:keySpec="&#x1112F;" />
+            <!-- C: 𑄰 CHAKMA VOWEL SIGN OI -->
+            <Key latin:keySpec="&#x11130;" />
+            <!-- V: 𑄣 CHAKMA LETTER LAA -->
+            <Key latin:keySpec="&#x11123;" />
+            <!-- B: 𑄕 CHAKMA LETTER NNAA -->
+            <Key latin:keySpec="&#x11115;" />
+            <!-- N: 𑄏 CHAKMA LETTER JHAA -->
+            <Key latin:keySpec="&#x1110F;" />
+            <!-- M: 𑄆 CHAKMA LETTER E -->
+            <Key latin:keySpec="&#x11106;" />
+        </case>
+        <default>
+            <!-- z: 𑄄 CHAKMA LETTER I -->
+            <Key latin:keySpec="&#x11104;" />
+            <!-- x: 𑄮 CHAKMA VOWEL SIGN O -->
+            <Key latin:keySpec="&#x1112E;" />
+            <!-- c: 𑄬 CHAKMA VOWEL SIGN E -->
+            <Key latin:keySpec="&#x1112C;" />
+            <!-- v: 𑄢 CHAKMA LETTER RAA -->
+            <Key latin:keySpec="&#x11122;" />
+            <!-- b: 𑄚 CHAKMA LETTER NA -->
+            <Key latin:keySpec="&#x1111A;" />
+            <!-- n: 𑄥 CHAKMA LETTER SAA -->
+            <Key latin:keySpec="&#x11125;" />
+            <!-- m: 𑄟 CHAKMA LETTER MAA -->
+            <Key latin:keySpec="&#x1111F;" />
+        </default>
+    </switch>
+</merge>

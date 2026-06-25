@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2024, BanglaType
+** Licensed under the Apache License, Version 2.0 (the "License").
+*/
+-->
+<!-- Jatiyo / National (জাতীয়) keyboard - top row (q..p). -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- q: ঙ / ং / ১ -->
+    <Key
+        latin:keySpec="&#x0999;"
+        latin:keyHintLabel="&#x09E7;"
+        latin:moreKeys="&#x0982;,&#x09E7;,1" />
+    <!-- w: য / য় / ২ -->
+    <Key
+        latin:keySpec="&#x09AF;"
+        latin:keyHintLabel="&#x09E8;"
+        latin:moreKeys="&#x09DF;,&#x09E8;,2" />
+    <!-- e: ড / ঢ / ৩ -->
+    <Key
+        latin:keySpec="&#x09A1;"
+        latin:keyHintLabel="&#x09E9;"
+        latin:moreKeys="&#x09A2;,&#x09E9;,3" />
+    <!-- r: প / ফ / ৪ -->
+    <Key
+        latin:keySpec="&#x09AA;"
+        latin:keyHintLabel="&#x09EA;"
+        latin:moreKeys="&#x09AB;,&#x09EA;,4" />
+    <!-- t: ট / ঠ / ৫ -->
+    <Key
+        latin:keySpec="&#x099F;"
+        latin:keyHintLabel="&#x09EB;"
+        latin:moreKeys="&#x09A0;,&#x09EB;,5" />
+    <!-- y: চ / ছ / ৬ -->
+    <Key
+        latin:keySpec="&#x099A;"
+        latin:keyHintLabel="&#x09EC;"
+        latin:moreKeys="&#x099B;,&#x09EC;,6" />
+    <!-- u: জ / ঝ / ৭ -->
+    <Key
+        latin:keySpec="&#x099C;"
+        latin:keyHintLabel="&#x09ED;"
+        latin:moreKeys="&#x099D;,&#x09ED;,7" />
+    <!-- i: হ / ঞ / ৮ -->
+    <Key
+        latin:keySpec="&#x09B9;"
+        latin:keyHintLabel="&#x09EE;"
+        latin:moreKeys="&#x099E;,&#x09EE;,8" />
+    <!-- o: গ / ঘ / ৯ -->
+    <Key
+        latin:keySpec="&#x0997;"
+        latin:keyHintLabel="&#x09EF;"
+        latin:moreKeys="&#x0998;,&#x09EF;,9" />
+    <!-- p: ড় / ঢ় / ০ -->
+    <Key
+        latin:keySpec="&#x09DC;"
+        latin:keyHintLabel="&#x09E6;"
+        latin:moreKeys="&#x09DD;,&#x09E6;,0" />
+</merge>

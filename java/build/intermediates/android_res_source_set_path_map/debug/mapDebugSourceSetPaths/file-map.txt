@@ -1,0 +1,8 @@
+com.itamadersomajinc.banglatype.keyboard.java-pngs-0 C:\Users\shahi\Downloads\bnaglatype\java\build\generated\res\pngs\debug
+com.itamadersomajinc.banglatype.keyboard.java-updated_navigation_xml-1 C:\Users\shahi\Downloads\bnaglatype\java\build\generated\updated_navigation_xml\debug
+com.itamadersomajinc.banglatype.keyboard.java-packageDebugResources-2 C:\Users\shahi\Downloads\bnaglatype\java\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.itamadersomajinc.banglatype.keyboard.java-packageDebugResources-3 C:\Users\shahi\Downloads\bnaglatype\java\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.itamadersomajinc.banglatype.keyboard.java-debug-4 C:\Users\shahi\Downloads\bnaglatype\java\build\intermediates\merged_res\debug\mergeDebugResources
+com.itamadersomajinc.banglatype.keyboard.java-java-5 C:\Users\shahi\Downloads\bnaglatype\java\res
+com.itamadersomajinc.banglatype.keyboard.java-debug-6 C:\Users\shahi\Downloads\bnaglatype\java\src\debug\res
+gradleHome-0 C:\Users\shahi\.gradle

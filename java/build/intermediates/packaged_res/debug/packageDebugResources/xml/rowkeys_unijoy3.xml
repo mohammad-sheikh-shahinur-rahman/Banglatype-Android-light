@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2024, BanglaType
+** Licensed under the Apache License, Version 2.0 (the "License").
+*/
+-->
+<!-- Unijoy (ইউনিজয়) keyboard - bottom row (z..m).
+     Note: 'z' emits ্র (hasanta+RA, ro-fola), shift ্য (hasanta+YA, jo-fola). -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- z: ্র (ro-fola) / ্য (jo-fola) -->
+    <Key
+        latin:keySpec="&#x09CD;&#x09B0;"
+        latin:moreKeys="&#x09CD;&#x09AF;" />
+    <!-- x: ো / ৌ / ও / ঔ -->
+    <Key
+        latin:keySpec="&#x09CB;"
+        latin:moreKeys="&#x09CC;,&#x0993;,&#x0994;" />
+    <!-- c: ে / ৈ / এ / ঐ -->
+    <Key
+        latin:keySpec="&#x09C7;"
+        latin:moreKeys="&#x09C8;,&#x098F;,&#x0990;" />
+    <!-- v: র / ল -->
+    <Key
+        latin:keySpec="&#x09B0;"
+        latin:moreKeys="&#x09B2;" />
+    <!-- b: ন / ণ / ঁ -->
+    <Key
+        latin:keySpec="&#x09A8;"
+        latin:moreKeys="&#x09A3;,&#x0981;" />
+    <!-- n: স / ষ / শ -->
+    <Key
+        latin:keySpec="&#x09B8;"
+        latin:moreKeys="&#x09B7;,&#x09B6;" />
+    <!-- m: ম / শ / ং -->
+    <Key
+        latin:keySpec="&#x09AE;"
+        latin:moreKeys="&#x09B6;,&#x0982;" />
+</merge>

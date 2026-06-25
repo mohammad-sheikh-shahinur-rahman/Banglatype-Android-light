@@ -1,0 +1,418 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    coreApp="true"
+4    package="com.itamadersomajinc.banglatype"
+5    android:versionCode="1000000000"
+6    android:versionName="1.0.0.0" >
+7
+8    <uses-sdk
+8-->INJECTED
+9        android:minSdkVersion="21"
+9-->INJECTED
+10        android:targetSdkVersion="36" />
+10-->INJECTED
+11
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:6:5-78
+12-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+13-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:7:5-87
+13-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:7:22-85
+14    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+14-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:8:5-70
+14-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:8:22-68
+15    <uses-permission android:name="android.permission.READ_CONTACTS" />
+15-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:9:5-71
+15-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:9:22-69
+16    <uses-permission android:name="android.permission.READ_PROFILE" />
+16-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:10:5-70
+16-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:10:22-68
+17    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+17-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:11:5-76
+17-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:11:22-74
+18    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+18-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:12:5-73
+18-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:12:22-71
+19    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+19-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:13:5-78
+19-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:13:22-76
+20    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+20-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:14:5-80
+20-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:14:22-78
+21    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+21-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:15:5-73
+21-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:15:22-71
+22    <uses-permission android:name="android.permission.VIBRATE" />
+22-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:16:5-65
+22-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:16:22-63
+23    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+23-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:17:5-80
+23-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:17:22-78
+24    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+24-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:18:5-70
+24-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:18:22-68
+25    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+25-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:19:5-77
+25-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:19:22-75
+26    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+26-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:20:5-79
+26-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:20:22-77
+27    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+27-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:21:5-76
+27-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:21:22-74
+28
+29    <permission
+29-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:23:5-24:47
+30        android:name="com.itamadersomajinc.banglatype.HIDE_SOFT_INPUT"
+30-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:23:17-79
+31        android:protectionLevel="signature" />
+31-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:24:10-45
+32    <permission
+32-->[androidx.core:core:1.13.0] C:\Users\shahi\.gradle\caches\9.6.0\transforms\b45193e0063d47fbfd056476d2450fa9\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+33        android:name="com.itamadersomajinc.banglatype.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+33-->[androidx.core:core:1.13.0] C:\Users\shahi\.gradle\caches\9.6.0\transforms\b45193e0063d47fbfd056476d2450fa9\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+34        android:protectionLevel="signature" />
+34-->[androidx.core:core:1.13.0] C:\Users\shahi\.gradle\caches\9.6.0\transforms\b45193e0063d47fbfd056476d2450fa9\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+35
+36    <uses-permission android:name="com.itamadersomajinc.banglatype.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+36-->[androidx.core:core:1.13.0] C:\Users\shahi\.gradle\caches\9.6.0\transforms\b45193e0063d47fbfd056476d2450fa9\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+36-->[androidx.core:core:1.13.0] C:\Users\shahi\.gradle\caches\9.6.0\transforms\b45193e0063d47fbfd056476d2450fa9\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+37
+38    <application
+38-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:26:5-156:19
+39        android:allowBackup="true"
+39-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:30:10-36
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.13.0] C:\Users\shahi\.gradle\caches\9.6.0\transforms\b45193e0063d47fbfd056476d2450fa9\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+41        android:debuggable="true"
+42        android:defaultToDeviceProtectedStorage="true"
+42-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:31:10-56
+43        android:directBootAware="true"
+43-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:32:10-40
+44        android:extractNativeLibs="true"
+44-->INJECTED
+45        android:icon="@drawable/logo_banglatype"
+45-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:27:10-50
+46        android:label="@string/english_ime_name"
+46-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:26:18-58
+47        android:roundIcon="@drawable/logo_banglatype"
+47-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:28:10-55
+48        android:supportsRtl="true"
+48-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:29:10-36
+49        android:testOnly="true" >
+50        <service
+50-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:34:9-43:19
+51            android:name="com.itamadersomajinc.banglatype.keyboard.LatinIME"
+51-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:34:18-82
+52            android:exported="true"
+52-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:37:14-37
+53            android:label="@string/english_ime_name"
+53-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:35:14-54
+54            android:permission="android.permission.BIND_INPUT_METHOD" >
+54-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:36:14-71
+55            <intent-filter>
+55-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:38:13-40:29
+56                <action android:name="android.view.InputMethod" />
+56-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:39:17-66
+56-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:39:25-64
+57            </intent-filter>
+58
+59            <meta-data
+59-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:41:13-42:50
+60                android:name="android.view.im"
+60-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:41:24-54
+61                android:resource="@xml/method" />
+61-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:42:18-48
+62        </service>
+63        <service
+63-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:45:9-54:19
+64            android:name="com.itamadersomajinc.banglatype.keyboard.spellcheck.AndroidSpellCheckerService"
+64-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:45:18-111
+65            android:exported="true"
+65-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:48:14-37
+66            android:label="@string/spell_checker_service_name"
+66-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:46:14-64
+67            android:permission="android.permission.BIND_TEXT_SERVICE" >
+67-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:47:14-71
+68            <intent-filter>
+68-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:49:13-51:29
+69                <action android:name="android.service.textservice.SpellCheckerService" />
+69-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:50:17-89
+69-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:50:25-87
+70            </intent-filter>
+71
+72            <meta-data
+72-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:52:13-53:56
+73                android:name="android.view.textservice.scs"
+73-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:52:24-67
+74                android:resource="@xml/spellchecker" />
+74-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:53:18-54
+75        </service>
+76        <service
+76-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:56:9-58:19
+77            android:name="com.itamadersomajinc.banglatype.dictionarypack.DictionaryService"
+77-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:56:18-97
+78            android:label="@string/dictionary_service_name" >
+78-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:57:14-61
+79        </service>
+80
+81        <activity
+81-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:60:9-72:20
+82            android:name="com.itamadersomajinc.banglatype.keyboard.setup.SetupActivity"
+82-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:60:19-94
+83            android:exported="true"
+83-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:67:14-37
+84            android:icon="@drawable/logo_banglatype"
+84-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:63:14-54
+85            android:label="@string/english_ime_name"
+85-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:62:14-54
+86            android:launchMode="singleTask"
+86-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:65:14-45
+87            android:noHistory="true"
+87-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:66:14-38
+88            android:roundIcon="@drawable/logo_banglatype"
+88-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:64:14-59
+89            android:theme="@style/platformActivityTheme" >
+89-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:61:14-58
+90            <intent-filter>
+90-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:68:13-71:29
+91                <action android:name="android.intent.action.MAIN" />
+91-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:69:17-68
+91-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:69:25-66
+92
+93                <category android:name="android.intent.category.LAUNCHER" />
+93-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:70:17-76
+93-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:70:27-74
+94            </intent-filter>
+95        </activity>
+96        <activity
+96-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:74:9-78:20
+97            android:name="com.itamadersomajinc.banglatype.keyboard.permissions.PermissionsActivity"
+97-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:74:19-106
+98            android:exported="false"
+98-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:76:14-38
+99            android:taskAffinity=""
+99-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:77:14-37
+100            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+100-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:75:14-73
+101        </activity>
+102        <activity
+102-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:80:9-85:20
+103            android:name="com.itamadersomajinc.banglatype.keyboard.setup.SetupWizardActivity"
+103-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:80:19-100
+104            android:clearTaskOnLaunch="true"
+104-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:83:14-46
+105            android:exported="true"
+105-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:84:14-37
+106            android:label="@string/english_ime_name"
+106-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:82:14-54
+107            android:theme="@style/platformActivityTheme" >
+107-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:81:14-58
+108        </activity>
+109        <activity
+109-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:87:9-91:20
+110            android:name="com.itamadersomajinc.banglatype.keyboard.settings.SettingsActivity"
+110-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:87:19-100
+111            android:exported="true"
+111-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:90:14-37
+112            android:label="@string/english_ime_settings"
+112-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:89:14-58
+113            android:theme="@style/platformSettingsTheme" >
+113-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:88:14-58
+114        </activity>
+115        <activity
+115-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:93:9-97:20
+116            android:name="com.itamadersomajinc.banglatype.keyboard.spellcheck.SpellCheckerSettingsActivity"
+116-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:93:19-114
+117            android:exported="true"
+117-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:96:14-37
+118            android:label="@string/android_spell_checker_settings"
+118-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:95:14-68
+119            android:theme="@style/platformSettingsTheme" >
+119-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:94:14-58
+120        </activity>
+121        <activity
+121-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:99:9-104:20
+122            android:name="com.itamadersomajinc.banglatype.dictionarypack.DictionarySettingsActivity"
+122-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:99:19-107
+123            android:exported="true"
+123-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:103:14-37
+124            android:label="@string/dictionary_settings_title"
+124-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:101:14-63
+125            android:theme="@style/platformSettingsTheme"
+125-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:100:14-58
+126            android:uiOptions="splitActionBarWhenNarrow" >
+126-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:102:14-58
+127        </activity>
+128        <activity
+128-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:106:9-110:20
+129            android:name="com.itamadersomajinc.banglatype.dictionarypack.DownloadOverMeteredDialog"
+129-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:106:19-106
+130            android:exported="true"
+130-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:109:14-37
+131            android:label="@string/dictionary_install_over_metered_network_prompt"
+131-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:108:14-84
+132            android:theme="@style/platformActivityTheme" >
+132-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:107:14-58
+133        </activity>
+134        <activity
+134-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:112:9-113:40
+135            android:name="com.itamadersomajinc.banglatype.keyboard.settings.TestFragmentActivity"
+135-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:112:19-104
+136            android:exported="false" />
+136-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:113:14-38
+137
+138        <receiver
+138-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:115:9-123:20
+139            android:name="com.itamadersomajinc.banglatype.keyboard.SystemBroadcastReceiver"
+139-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:115:19-98
+140            android:exported="true" >
+140-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:116:14-37
+141            <intent-filter>
+141-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:117:13-122:29
+142                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+142-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:118:17-83
+142-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:118:25-81
+143                <action android:name="android.intent.action.BOOT_COMPLETED" />
+143-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:119:17-78
+143-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:119:25-76
+144                <action android:name="android.intent.action.USER_INITIALIZE" />
+144-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:120:17-79
+144-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:120:25-77
+145                <action android:name="android.intent.action.LOCALE_CHANGED" />
+145-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:121:17-78
+145-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:121:25-76
+146            </intent-filter>
+147        </receiver>
+148        <receiver
+148-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:125:9-130:20
+149            android:name="com.android.inputmethod.latin.DictionaryPackInstallBroadcastReceiver"
+149-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:125:19-102
+150            android:exported="false" >
+150-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:126:14-38
+151            <intent-filter>
+151-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:127:13-129:29
+152                <action android:name="com.android.inputmethod.dictionarypack.aosp.UNKNOWN_CLIENT" />
+152-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:128:17-100
+152-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:128:25-98
+153            </intent-filter>
+154        </receiver>
+155        <receiver
+155-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:132:9-140:20
+156            android:name="com.itamadersomajinc.banglatype.dictionarypack.EventHandler"
+156-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:132:19-93
+157            android:exported="true" >
+157-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:133:14-37
+158            <intent-filter>
+158-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:134:13-139:29
+159                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+159-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:135:17-81
+159-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:135:25-79
+160                <action android:name="android.intent.action.DATE_CHANGED" />
+160-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:136:17-76
+160-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:136:25-74
+161                <action android:name="com.android.inputmethod.dictionarypack.aosp.UPDATE_NOW" />
+161-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:137:17-96
+161-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:137:25-94
+162                <action android:name="com.android.inputmethod.dictionarypack.aosp.INIT_AND_UPDATE_NOW" />
+162-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:138:17-105
+162-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:138:25-103
+163            </intent-filter>
+164        </receiver>
+165        <receiver
+165-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:142:9-147:20
+166            android:name="com.itamadersomajinc.banglatype.keyboard.accounts.AccountsChangedReceiver"
+166-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:142:19-107
+167            android:exported="true" >
+167-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:143:14-37
+168            <intent-filter>
+168-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:144:13-146:29
+169                <action android:name="android.accounts.LOGIN_ACCOUNTS_CHANGED" />
+169-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:145:17-81
+169-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:145:25-79
+170            </intent-filter>
+171        </receiver>
+172
+173        <provider
+173-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:149:9-155:20
+174            android:name="com.itamadersomajinc.banglatype.dictionarypack.DictionaryProvider"
+174-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:149:19-99
+175            android:authorities="@string/authority"
+175-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:152:14-53
+176            android:exported="false"
+176-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:151:14-38
+177            android:grantUriPermissions="true"
+177-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:150:14-48
+178            android:label="@string/dictionary_provider_name"
+178-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:154:14-62
+179            android:multiprocess="false" >
+179-->C:\Users\shahi\Downloads\bnaglatype\java\AndroidManifest.xml:153:14-42
+180        </provider>
+181        <provider
+181-->[androidx.emoji2:emoji2:1.3.0] C:\Users\shahi\.gradle\caches\9.6.0\transforms\944ddacf36bee9ae8d13976afe576061\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+182            android:name="androidx.startup.InitializationProvider"
+182-->[androidx.emoji2:emoji2:1.3.0] C:\Users\shahi\.gradle\caches\9.6.0\transforms\944ddacf36bee9ae8d13976afe576061\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+183            android:authorities="com.itamadersomajinc.banglatype.androidx-startup"
+183-->[androidx.emoji2:emoji2:1.3.0] C:\Users\shahi\.gradle\caches\9.6.0\transforms\944ddacf36bee9ae8d13976afe576061\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+184            android:exported="false" >
+184-->[androidx.emoji2:emoji2:1.3.0] C:\Users\shahi\.gradle\caches\9.6.0\transforms\944ddacf36bee9ae8d13976afe576061\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+185            <meta-data
+185-->[androidx.emoji2:emoji2:1.3.0] C:\Users\shahi\.gradle\caches\9.6.0\transforms\944ddacf36bee9ae8d13976afe576061\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+186                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+186-->[androidx.emoji2:emoji2:1.3.0] C:\Users\shahi\.gradle\caches\9.6.0\transforms\944ddacf36bee9ae8d13976afe576061\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+187                android:value="androidx.startup" />
+187-->[androidx.emoji2:emoji2:1.3.0] C:\Users\shahi\.gradle\caches\9.6.0\transforms\944ddacf36bee9ae8d13976afe576061\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+188            <meta-data
+188-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\shahi\.gradle\caches\9.6.0\transforms\88545cd91e62dc8458d064c66ae1324b\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+189                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+189-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\shahi\.gradle\caches\9.6.0\transforms\88545cd91e62dc8458d064c66ae1324b\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+190                android:value="androidx.startup" />
+190-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\shahi\.gradle\caches\9.6.0\transforms\88545cd91e62dc8458d064c66ae1324b\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+191            <meta-data
+191-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+192                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+192-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+193                android:value="androidx.startup" />
+193-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+194        </provider>
+195
+196        <receiver
+196-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+197            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+197-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+198            android:directBootAware="false"
+198-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+199            android:enabled="true"
+199-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+200            android:exported="true"
+200-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+201            android:permission="android.permission.DUMP" >
+201-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+202            <intent-filter>
+202-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+203                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+203-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+203-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+204            </intent-filter>
+205            <intent-filter>
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+206                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+206-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+206-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+207            </intent-filter>
+208            <intent-filter>
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+209                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+209-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+209-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+210            </intent-filter>
+211            <intent-filter>
+211-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+212                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+212-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+212-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahi\.gradle\caches\9.6.0\transforms\c51f9e44dbe7898cf711039b8480dfe2\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+213            </intent-filter>
+214        </receiver>
+215    </application>
+216
+217</manifest>

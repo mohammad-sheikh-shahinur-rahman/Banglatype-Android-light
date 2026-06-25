@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2026, BanglaType
+** Licensed under the Apache License, Version 2.0 (the "License").
+*/
+-->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked|alphabetShiftLockShifted">
+            <!-- A: 𑄭 CHAKMA VOWEL SIGN AI -->
+            <Key latin:keySpec="&#x1112D;" />
+            <!-- S: 𑄪 CHAKMA VOWEL SIGN U -->
+            <Key latin:keySpec="&#x1112A;" />
+            <!-- D: 𑄨 CHAKMA VOWEL SIGN I -->
+            <Key latin:keySpec="&#x11128;" />
+            <!-- F: 𑄧 CHAKMA VOWEL SIGN A -->
+            <Key latin:keySpec="&#x11127;" />
+            <!-- G: 𑄳 CHAKMA SIGN VIRAMA -->
+            <Key latin:keySpec="&#x11133;" />
+            <!-- H: 𑄞 CHAKMA LETTER BHAA -->
+            <Key latin:keySpec="&#x1111E;" />
+            <!-- J: 𑄈 CHAKMA LETTER KHAA -->
+            <Key latin:keySpec="&#x11108;" />
+            <!-- K: 𑄗 CHAKMA LETTER THAA -->
+            <Key latin:keySpec="&#x11117;" />
+            <!-- L: 𑄙 CHAKMA LETTER DHAA -->
+            <Key latin:keySpec="&#x11119;" />
+        </case>
+        <default>
+            <!-- a: 𑄱 CHAKMA O MARK -->
+            <Key latin:keySpec="&#x11131;" />
+            <!-- s: 𑄫 CHAKMA VOWEL SIGN UU -->
+            <Key latin:keySpec="&#x1112B;" />
+            <!-- d: 𑄩 CHAKMA VOWEL SIGN II -->
+            <Key latin:keySpec="&#x11129;" />
+            <!-- f: 𑄃 CHAKMA LETTER AA -->
+            <Key latin:keySpec="&#x11103;" />
+            <!-- g: 𑅁 CHAKMA DANDA -->
+            <Key latin:keySpec="&#x11141;" />
+            <!-- h: 𑄝 CHAKMA LETTER BAA -->
+            <Key latin:keySpec="&#x1111D;" />
+            <!-- j: 𑄇 CHAKMA LETTER KAA -->
+            <Key latin:keySpec="&#x11107;" />
+            <!-- k: 𑄖 CHAKMA LETTER TAA -->
+            <Key latin:keySpec="&#x11116;" />
+            <!-- l: 𑄘 CHAKMA LETTER DAA -->
+            <Key latin:keySpec="&#x11118;" />
+        </default>
+    </switch>
+</merge>

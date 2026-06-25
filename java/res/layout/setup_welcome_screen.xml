@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2013, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/setup_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Teal hero header: full width -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bt_hero_bg"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="48dp"
+            android:paddingBottom="48dp">
+            <include layout="@layout/setup_welcome_title" />
+        </LinearLayout>
+
+        <!-- Feature highlights: centered with max width on large screens -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="16dp"
+            android:maxWidth="600dp"> <!-- maxWidth is just a hint here, ConstraintLayout is better for this but let's stick to basics for now -->
+
+            <TextView
+                style="@style/BtSectionTitle"
+                android:gravity="center_horizontal"
+                android:text="Everything you need to write in Bangla" />
+
+            <!-- Card container -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Switch layout fast -->
+                <com.google.android.material.card.MaterialCardView style="@style/BtCard">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bt_feature_icon_bg"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_bt_layout"
+                            android:contentDescription="@string/bt_feature_layout_title" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginLeft="14dp">
+                            <TextView style="@style/BtCardTitle"
+                                android:text="@string/bt_feature_layout_title" />
+                            <TextView style="@style/BtCardDesc"
+                                android:text="@string/bt_feature_layout_desc" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Write faster -->
+                <com.google.android.material.card.MaterialCardView style="@style/BtCard">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bt_feature_icon_bg"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_bt_speed"
+                            android:contentDescription="@string/bt_feature_speed_title" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginLeft="14dp">
+                            <TextView style="@style/BtCardTitle"
+                                android:text="@string/bt_feature_speed_title" />
+                            <TextView style="@style/BtCardDesc"
+                                android:text="@string/bt_feature_speed_desc" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 100+ themes -->
+                <com.google.android.material.card.MaterialCardView style="@style/BtCard">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bt_feature_icon_bg"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_bt_theme"
+                            android:contentDescription="@string/bt_feature_theme_title" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginLeft="14dp">
+                            <TextView style="@style/BtCardTitle"
+                                android:text="@string/bt_feature_theme_title" />
+                            <TextView style="@style/BtCardDesc"
+                                android:text="@string/bt_feature_theme_desc" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 100% safe & secure -->
+                <com.google.android.material.card.MaterialCardView style="@style/BtCard">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bt_feature_icon_bg"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_bt_secure"
+                            android:contentDescription="@string/bt_feature_secure_title" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginLeft="14dp">
+                            <TextView style="@style/BtCardTitle"
+                                android:text="@string/bt_feature_secure_title" />
+                            <TextView style="@style/BtCardDesc"
+                                android:text="@string/bt_feature_secure_desc" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <!-- Tutorial video + "Get started" action -->
+            <include layout="@layout/setup_welcome_video" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
